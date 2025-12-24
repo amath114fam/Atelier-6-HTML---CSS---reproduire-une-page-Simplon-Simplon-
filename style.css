@@ -66,13 +66,16 @@ header nav ul a:hover{
     justify-content: center;
     gap: 1.5rem;
     height: 500px;
-    background:
-        linear-gradient(
-            rgba(230, 81, 0, 0.5),
-            rgba(230, 81, 0, 0.5)
-        ),
-        url(images/banner-head-accueil.jpg) center/cover;
+    background:url(images/banner-head-accueil.jpg) center/cover;
     position: relative;
+}
+.flutter{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background: #61290a;
+    opacity: 1;
+    mix-blend-mode: multiply;
 }
 .accueil .search{
     position: absolute;
@@ -83,12 +86,14 @@ header nav ul a:hover{
     border-radius: 30px;
     color: #b1530c;
     font-weight: 600;
+    z-index: 1;
 }
 .accueil .search i{
     color: #111828;
 }
 .text-description{
     width: 38%;
+    position: relative;
 }
 .text-description h2{
     font-size: 40px;
@@ -105,7 +110,8 @@ header nav ul a:hover{
     width: 400px;
     height: 250px;
     border-radius: 30px;
-    zoom: 1;
+    position: relative;
+    object-fit: cover;
 }
 /*******************************Résultats*********************************************/
 .resultats{
@@ -342,12 +348,15 @@ header nav ul a:hover{
     justify-content: center;
     align-items: center;
     height: 300px;
-    background:
-        linear-gradient(
-            rgba(230, 81, 0, 0.5),
-            rgba(230, 81, 0, 0.5)
-        ),
-        url(images/banner-head-accueil.jpg) center/cover;
+    background: url(images/banner-head-accueil.jpg) center/cover;
+}
+.flutter2{
+    height: 300px;
+    position: absolute;
+    width: 100%;
+    background: #61290a;
+    opacity: 1;
+    mix-blend-mode: multiply;
 }
 .recherche-content{
     display: flex;
@@ -355,6 +364,7 @@ header nav ul a:hover{
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+    position: relative;
 }
 .recherche-content .first-p, 
 .recherche-content .second-p,
@@ -430,4 +440,341 @@ footer .trait{
     text-align: center;
     color: #7a808e;
 }
+/*****************************************************************************
+********************************************traiteurs.html*********************/
+.accueil-traiteurs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background:url(images/banner-caterers.jpg) center/cover;
+    position: relative;
+    justify-content: center;
+}
+.blur{
+    background: #8c4212;
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    opacity: 0.6;
+    mix-blend-mode: multiply;
+}
+.text-trait-accuel h2{
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+.text-trait-accuel p{
+    color: white;
+    position: relative;
+}
+header nav #traiteurs{
+    background: #d97807;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+#incription{
+    background: #d97807;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+/***********************************************section filter***************************/
+.filter{
+    background: #fefbea;
+}
+.filter-content{
+    padding: 20px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.top-filter{
+    display: flex;
+    align-items: end;
+    gap: 20px;
+}
+.top-filter select {
+    padding: 0.4em 3em 0.4em  0.2em;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #dddee0;
+    background: #ffffff;
+}
+
+.filter-reload{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.filter-reload .lienRose{
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    background: #d97807;
+    border-radius: 10px;
+    color: white;
+    gap: 10px;
+}
+.filter-reload .lienBlanche{
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    color: black;
+    border: 1px solid #dddee0;
+    gap: 10px;
+}
+.filter-bottom{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 14%;
+    gap: 10px;
+}
+.fisrt-box{
+    display: flex;
+    position: relative;
+    background: #ffffff;
+    height: 160px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.fisrt-box img{
+    height: 160px;
+    width: 280px;
+    object-fit: cover;
+}
+.image-text{
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+.fisrt-box .star,
+.fisrt-box .profil,
+.fisrt-box .verifie {
+    position: absolute;
+}
+.fisrt-box .star{
+    right: 2%;
+    top: 10%;
+    display: flex;
+    align-items: center;
+    color: #181f2a;
+}
+.fisrt-box .fa-star{
+    padding-right: 5px;
+    color: #f9cb12;
+    font-size: 13px;
+}
+.fisrt-box .profil{
+    right: 2%;
+    bottom: 10%;
+    padding: 5px 9px;
+    color: white;
+    background: #111828;
+    border-radius: 5px;
+}
+.fisrt-box .verifie{
+    left: 19%;
+    top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 9px;
+    background: #dcfce7;
+    border-radius: 30px;
+    font-size: 13px;
+    color: #156633;
+    font-weight: bold;
+}
+.fisrt-box .verifie .bx{
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+    color: #156633;
+}
+.fisrt-box .desc{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.fisrt-box .desc a,
+.fisrt-box .desc p,
+.fisrt-box .desc span{
+    color: #4c5466;
+    font-size: 14px;
+}
+.fisrt-box .desc .text-experience,
+.fisrt-box .desc .specialite{
+    font-weight: bold;
+    font-size: 14px;
+}
+.fisrt-box .desc .text-experience{
+    position: relative;
+}
+.fisrt-box .desc .text-experience .fa-circle{
+    font-size: 13px;
+}
+.langue a{
+    padding: 4px;
+    background: #f3f4f6;
+    border-radius: 30px;
+}
+.langue .french{
+    margin-right: 5px;
+}
+.desc .japonaise{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    background: #f3f4f6;
+    border-radius: 30px;
+    width: 80px;
+}
+/**********************************************************************************************
+*************************************************inscription-traiteur.html*********************/
+.accueil-traiteurs .text-trait-inscription h2{
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    font-size: 30px;
+    left: 20%;
+    top: 31%;
+}
+.accueil-traiteurs .text-trait-inscription p{
+    color: white;
+    position: absolute;
+    left: 20%;
+}
+/************************************************sectionform********************************/
+.form-incription{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+    background: #fefbea;
+}
+.form-incription form{
+    padding: 70px 0;
+    width: 80%;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+.form-incription form .fieldset1,
+.form-incription form .fieldset2,
+.form-incription form .fieldset3,
+.form-incription form .fieldset4,
+.form-incription form .fieldset5{
+    width: 50%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto
+}
+.form-incription #register{
+    position: absolute;
+    background: #d97807;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    right: 22%;
+    bottom: 1%;
+}
+.form-incription form fieldset{
+    border: none;
+    margin-left: 25%;
+}
+.form-incription form .fieldset1 .name_email{
+   display: flex;
+   gap: 25px;
+}
+.form-incription .name,
+.form-incription .email{
+    display: flex;
+    flex-direction: column;
+}
+.form-incription .name input,
+.form-incription .email input{
+    border: none;
+    border: 0.2px solid black;
+    padding: 7px;
+    border-radius: 5px;
+}
+.form-incription form  label{
+    font-size: 13px;
+    font-weight: 500;
+}
+.form-incription form .fieldset1 .bgblue{
+    background: #e9f1fe;
+}
+
+.form-incription form .fieldset2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto
+}
+.form-incription form .fieldset2 .experienceYear,
+.form-incription form .fieldset2 .texter{
+    display: flex;
+    flex-direction: column;
+}
+.form-incription form .fieldset2 input{
+    width: 517px;
+    border: none;
+    border: 0.2px solid black;
+    padding: 7px;
+    border-radius: 5px;
+}
+.form-incription form .fieldset2 select{
+    width: 529px;
+    border: none;
+    border: 0.2px solid black;
+    padding: 7px;
+    border-radius: 5px;
+    background: #f3f4f6;
+}
+.form-incription form .fieldset2 textarea{
+    width: 470px;
+    border: none;
+    border: 0.2px solid black;
+    padding: 30px;
+    border-radius: 5px;
+}
+.content-flex{
+    display: flex;
+}
+.fieldset3 .radio-left{
+    margin-right: 100px;
+}
+.form-incription form  .fieldset4 .Telephone{
+   display: flex;
+   gap: 25px;
+}
+.form-incription form .fieldset4 .telephone,
+.form-incription form .fieldset4 .adresse{
+    display: flex;
+    flex-direction: column;
+}
+.form-incription form .fieldset4 input{
+    border: none;
+    border: 0.2px solid black;
+    padding: 7px;
+    border-radius: 5px;
+}
+.form-incription form p{
+    font-size: 13px;
+}
+
+
 
