@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section class="dashboard">
+            <div class="dashleft">
+                <div class="logoTop">
+                    <a id="logo" href="images/logo.png"><img  src="images/logo.png" alt="logo du site" style="height: 50px;" ></a>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-house"></i> Tableau de bord</a></li>
+                        <li><a href="#"><i class="fa-brands fa-leanpub"></i> Cours de cuisine</a></li>
+                        <li><a href="#"><i class="fa-solid fa-bookmark"></i> Catégories</a></li>
+                        <li><a href="#"> <i class="fa-solid fa-bookmark"></i> Restaurants</a></li>
+                        <li><a href="#"><i class="fa-solid fa-bookmark"></i>Traiteurs</a></li>
+                        <li><a href="#"><i class="fa-solid fa-bookmark"></i> Avis</a></li>
+                    </ul>
+                </div>
+                <div class="logout">
+                    <p class="p1"><i class="fa-solid fa-right-from-bracket"></i> Retour à l'accueil</p>
+                    <p><i class="fa-solid fa-right-from-bracket"></i> Déconnexion</p>
+                </div>
+            </div>
+            <div class="dashright">
+                <div class="topRight">
+                    <div class="textFist">
+                        <h2>Restaurants</h2>
+                        <p>Gérer les restaurants de la plateforme</p>
+                    </div>
+                    <a href="#">Ajouter un restaurant</a>
+                </div>
+                <div class="explore">
+                    <div class="exploreInputLabel">
+                        <label for="categorie">Zone</label>
+                        <select name="categorie" id="categorie">
+                            <option value="">Tous les toutes zones</option>
+                        </select>
+                    </div>
+                    <a href="#">Filter</a>
+                </div>
+                <div class="tableau">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">NOM</th>
+                                <th scope="col">EMAIL</th>
+                                <th scope="col">ZONE</th>
+                                <th scope="col">STATUT</th>
+                                <th scope="col">ACTIONS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="images/resto1.jpg" alt="Restaurant1">Le Djoloff</td>
+                                <td>contact@ledjoloff.sn</td>
+                                <td>Plateau</td>
+                                <td><a href="#" class="enAttente">En attente</a></td>
+                                <td><a class="a1" href="#">Modifier</a> <a class="a2" href="#">Supprimer</a></td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/resto2.jpg" alt="Restaurant2">Chez Loutcha</td>
+                                <td>contact@chezloutcha.sn</td>
+                                <td>Plateau</td>
+                                <td><a href="#" class="enAttente">En attente</a></td>
+                                <td><a class="a1" href="#">Modifier</a> <a class="a2" href="#">Supprimer</a></td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/resto3.jpg" alt="Restaurant3">Le Thiossane</td>
+                                <td>contact@lethiossane.sn</td>
+                                <td>Médina</td>
+                                <td><a href="#"  class="veRifie">Vérifié</a></td>
+                                <td><a class="a1" href="#">Modifier</a> <a class="a2" href="#">Supprimer</a></td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/resto4.jpg" alt="Restaurant4">Sushi Dakar</td>
+                                <td>contact@sushidakar.sn</td>
+                                <td>Almadies </td>
+                                <td><a href="#" class="veRifie">Vérifié</a></td>
+                                <td><a class="a1" href="#">Modifier</a> <a class="a2" href="#">Supprimer</a></td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/resto5.jpg" alt="Restaurant5">Amanda Larson</td>
+                                <td>vedevi@mailinator.com</td>
+                                <td>Plateau</td>
+                                <td><a href="#" class="enAttente">En attente</a></td>
+                                <td><a class="a1" href="#">Modifier</a> <a class="a2" href="#">Supprimer</a></td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/resto6.jpg" alt="Restaurant6">Mara Knight</td>
+                                <td>totynukiza@mailinator.com</td>
+                                <td>Possimus quis moles</td>
+                                <td><a href="#" class="enAttente">En attente</a></td>
+                                <td><a class="a1" href="#">Modifier</a> <a class="a2" href="#">Supprimer</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
