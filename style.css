@@ -780,19 +780,29 @@ header nav #traiteurs{
 *********************************************************************************************************/
 .accueil-detail{
     background: url(images/pattern-background.svg);
-    padding: 40px;
+    padding: 30px 40px;
 }
 .accueil-detail .accueil-detail-content{
-    border-radius: 5px;
+    border-radius: 10px;
     height: 400px;
-    background: url(images/salades.jpg) center / cover;
+    background: url(images/imageSalade.webp) center / cover;
     object-fit: cover;
     position: relative;
+}
+.accueil-detail-content .sombre{
+    border-radius: 10px;
+    background: #6d7170;
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    opacity: 0.3;
+    mix-blend-mode: multiply;
 }
 .accueil-detail-content .verifiee ,
 .accueil-detail-content .stars{
     position: absolute;
     bottom: 5%;
+    z-index: 1;
 }
 .accueil-detail-content .verifiee{
     left: 10%;
