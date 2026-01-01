@@ -67,7 +67,7 @@ header nav ul a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2.5rem;
+    gap: 1.5rem;
     height: 500px;
     background:url(images/banner-head-accueil.jpg) center/cover;
     position: relative;
@@ -367,6 +367,7 @@ header nav ul a:hover{
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+    position: relative;
 }
 .recherche-content .first-p, 
 .recherche-content .second-p,
@@ -374,7 +375,6 @@ header nav ul a:hover{
 .recherche-content a{
     text-align: center;
     color: #fefcfc;
-    z-index: 2;
 }
 .recherche-content .second-p{
     margin-bottom: 20px;
@@ -486,7 +486,7 @@ header nav #traiteurs{
 /***********************************************section filter***************************/
 .filter{
     background: #fefbea;
-    padding: 15px 80px 0px 80px;
+    padding: 20px 80px;
 }
 .filter-content{
     display: flex;
@@ -657,17 +657,16 @@ header nav #traiteurs{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px 10%;
+    padding: 30px 0;
     background: #fefbea;
 }
 .form-incription form{
-    padding: 70px;
-    width: 70%;
+    padding: 70px 0;
+    width: 80%;
     background: #ffffff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-self: center;
     flex-direction: column;
     gap: 20px;
     position: relative;
@@ -677,7 +676,7 @@ header nav #traiteurs{
 .form-incription form .fieldset3,
 .form-incription form .fieldset4,
 .form-incription form .fieldset5{
-    width: 80%;
+    width: 50%;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     padding: 30px;
@@ -692,18 +691,16 @@ header nav #traiteurs{
     color: white;
     border-radius: 5px;
     padding: 5px 10px;
-    right: 20%;
+    right: 22%;
     bottom: 1%;
 }
-/* .form-incription form fieldset{
+.form-incription form fieldset{
     border: none;
     margin-left: 25%;
-} */
+}
 .form-incription form .fieldset1 .name_email{
    display: flex;
-   align-items: center;
-   justify-content: space-between;
-   gap: 10px;
+   gap: 25px;
 }
 .form-incription .name,
 .form-incription .email{
@@ -726,7 +723,6 @@ header nav #traiteurs{
 }
 
 .form-incription form .fieldset2{
-    /* width: 100%; */
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -738,14 +734,14 @@ header nav #traiteurs{
     flex-direction: column;
 }
 .form-incription form .fieldset2 input{
-    /* width: 100%; */
+    width: 517px;
     border: none;
     border: 0.2px solid black;
     padding: 7px;
     border-radius: 5px;
 }
 .form-incription form .fieldset2 select{
-    width: 100%;
+    width: 529px;
     border: none;
     border: 0.2px solid black;
     padding: 7px;
@@ -753,7 +749,7 @@ header nav #traiteurs{
     background: #f3f4f6;
 }
 .form-incription form .fieldset2 textarea{
-    /* width: 100%; */
+    width: 470px;
     border: none;
     border: 0.2px solid black;
     padding: 30px;
@@ -767,7 +763,6 @@ header nav #traiteurs{
 }
 .form-incription form  .fieldset4 .Telephone{
    display: flex;
-   justify-content: space-between;
    gap: 25px;
 }
 .form-incription form .fieldset4 .telephone,
@@ -1196,97 +1191,10 @@ header nav #traiteurs{
     border-radius: 5px;
     font-weight: 500;
 }
-/*********************************page contact****************************/
-.contact-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 4% 4%;
-    background: #FFF3E0;
-}
-.contact-container p{
-    text-align: center;
-}
-.contact-container form{
-    padding: 2% 5%;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    gap: 20px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
-}
-.contact-container form input{
-    padding: 3% 0;
-    border: none;
-    border: 1px solid #6d7170;
-    width: 100%;
-    border-radius: 5px;
-}
-.contact-container .nom-prenom{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-.contact-container .prenom-content,
-.contact-container .email-contact{
-    display: flex;
-    flex-direction: column;
-}
-.contact-container form button{
-    border: none;
-    width: 100%;
-    padding: 3% 0;
-    border-radius: 10px;
-    color: white;
-    background: #d97807;
-}
-.contact-container form button i{
-    margin-right: 1%;
-}
-.contact-boite{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    gap: 20px;
-    background: #fff;
-    padding: 2% 5%;
-}
-.contact-boite .contact-boite-content{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    border-radius: 10px;
-    background: #FFF3E0;
-    padding: 6% 0;
-}
-.contact-boite .contact-boite-content a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5%;
-    border-radius: 50%;
-    background: #d97807;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-}
-.contact-boite .contact-boite-content p{
-    color: #61290a;
-    font-weight: bold;
-}
 /****************************************media queries*****************************************/
 @media(max-width:576px){
     header{
         padding: 10px;
-        position: sticky;
-        z-index: 5;
-        background: white;
     }
     header #logo img{
         height: 50px;
@@ -1310,407 +1218,7 @@ header nav #traiteurs{
     .accueil{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        height: 100%;
-        padding: 10px;
     }
-    .accueil .text-description{
-        width: 100%;
-    }
-    .accueil .text-description h2{
-        font-size: 25px;
-    }
-    .accueil img{
-        width: 300px;
-        height: 300px;
-        object-fit: cover;
-    }
-    .accueil .search{
-        right: 15%;
-        top: 45%;
-   }
-   .resultats{
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-   }
-   .resultats .box{
-        width: 80%;
-   }
-
-   .service{
-       padding: 10px;
-   }
-   .cart-content-box{
-        width: 80%;
-        height: 100%;
-   }
-   .cart-content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-   }
-   .maps{
-    padding: 10px;
-   }
-   .maps iframe{
-     width: 300px;
-   }
-
-   .client{
-        padding: 10px;
-   }
-   .client .content{
-        display: flex;
-        flex-direction: column;
-   }
-   .client .client-content{
-        width: 250px;
-   }
-
-
-   .contact{
-       padding: 10px;
-   }
-   .contact-form-image img{
-      height: 100px;
-   }
-   .contact-form-image{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   }
-   .contact .form-group{
-    margin: auto;
-   }
-   .contact .form-group input{
-    width: 86%;
-   }
-   .contact .contact-desc{
-    text-align: center;
-   }
-   .recherche{
-    padding: 20px;
-    position: relative;
-   }
-   .recherche-content{
-    gap: 5px;
-   }
-   .recherche-content .second-p{
-    margin-bottom: 10px;
-   }
-   .flutter2{
-    height: 100%;
-   }
-   .recherche-content .first-p, 
-   .recherche-content .second-p,
-   .recherche-content .decouverte,
-   .recherche-content a{
-    z-index: 2;
-   }
-   .recherche-content #find-restaurant{
-    padding: 10px;
-   }
-   
-   footer{
-    padding: 10px;
-    background: #111828;
-   }
-    .footer-content{
-        display: flex;
-        flex-direction: column;
-        /* align-items: start; */
-    }
-
-
-
-    /******************************************traiteur*****************************************/
-    .accueil-traiteurs{
-         padding: 10px;
-         height: 300px;
-    }
-    .accueil-traiteurs .text-trait-accuel p{
-        font-size: 13px;
-    }
-    .filter{
-        padding: 10px 10px 0 10px;
-    }
-    .filter-content{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    .top-filter{
-        /* padding: 10px 10px; */
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        width: 100%;
-    }
-    .filter-option1{
-        width: 100%;
-    }
-    .filter-option1 select{
-        width: 100%;
-    }
-    .filter-option2{
-        width: 100%;
-    }
-    .filter-option2 select{
-        width: 100%;
-    }
-    .filter-reload{
-    display: flex;
-    align-items: start;
-   }
-   .blur{
-    background: #8c4212;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    opacity: 0.6;
-    mix-blend-mode: multiply;
-   }
-
-
-   .fisrt-box{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    background: #ffffff;
-    height: 100%;
-    width: 100%;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-.filter-bottom{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0;
-    width: 100%;
-}
-
-.image-text{
-    /* padding: 3px; */
-    display: flex;
-    flex-direction: column;
-    gap: 9px;
-    align-items: start;
-    padding-bottom: 10px;
-}
-.fisrt-box img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-fisrt-box .desc a,
-.fisrt-box .desc p,
-.fisrt-box .desc span{
-    color: #4c5466;
-    font-size: 10px;
-}
-.fisrt-box .desc .text-experience,
-.fisrt-box .desc .specialite{
-    font-weight: bold;
-    font-size: 10px;
-}
-.fisrt-box .verifie{
-    left: 70%;
-    top: 2%;
-}
-.fisrt-box .star{
-    right: 3%;
-    top: 70%;
-    display: flex;
-    align-items: center;
-    color: #181f2a;
-}
-.fisrt-box .profil{
-    right: 3%;
-    bottom: 2%;
-    padding: 3px 10px;
-    color: white;
-    background: #111828;
-    border-radius: 5px;
-    font-size: 10px;
-}
-
-/*********************************************detailtraiteur**********************/
-   .accueil-detail{
-    padding: 10px ;
-   }
-   /* .accueil-detail .accueil-detail-content{
-    height: 100%;
-   } */
-    .accueil-detail-content .verifiee {
-        left: 27%;
-    }
-    .detail-contact{
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-    }
-    .servicepropose .checkservice{
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
-    .servicepropose .checkservice .checkLeft,
-    .servicepropose .checkservice .checkRight{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    }
-
-
-
-    .form-incription{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 0;
-    background: #fefbea;
-}
-.form-incription form{
-    padding: 70px 0;
-    width: 80%;
-    background: #ffffff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-self: center;
-    flex-direction: column;
-    gap: 20px;
-    position: relative;
-}
-/***************************************inscription******************************/
-.form-incription form{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-.name_email{
-    display: flex;
-    flex-direction: column;
-}
-.form-incription{
-    padding: 0 2%;
-}
-.form-incription .content-flex{
-    display: flex;
-    flex-direction: column;
-}
-.form-incription form  .fieldset4 .Telephone{
-    display: flex;
-    flex-direction: column;
-}
-.fieldset2{
-    width: 100%;
-}
-.fieldset1{
-    width: 100%;
-    padding: 0;
-}
-.fieldset1 input{
-    width: 100%;
-}
-.fieldset2 select{
-    width: 100%;
-}
-.form-incription #register{
-    position: absolute;
-    background: #d97807;
-    color: white;
-    border-radius: 5px;
-    padding: 5px 10px;
-    right: 20%;
-    bottom: 1%;
-}
-/*********************************page contact****************************/
-.contact-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 9% 4%;
-    background: #FFF3E0;
-}
-.contact-container p{
-    text-align: center;
-}
-.contact-container form{
-    padding: 10%;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    gap: 20px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
-}
-.contact-container form input{
-    padding: 3% 0;
-    border: none;
-    border: 1px solid #6d7170;
-    width: 100%;
-    border-radius: 5px;
-}
-.contact-container .nom-prenom{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.contact-container .prenom-content,
-.contact-container .email-contact{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-.contact-container form button{
-    border: none;
-    width: 100%;
-    padding: 3% 0;
-    border-radius: 10px;
-    color: white;
-    background: #d97807;
-}
-.contact-container form button i{
-    margin-right: 1%;
-}
-.contact-boite{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    background: #fff;
-    padding: 9% 5%;
-}
-.contact-boite .contact-boite-content{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    border-radius: 10px;
-    background: #FFF3E0;
-    padding: 6% 0;
-}
-.contact-boite .contact-boite-content a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 3.3% 3%;
-    border-radius: 50%;
-    background: #d97807;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-}
-.contact-boite .contact-boite-content p{
-    color: #61290a;
-    font-weight: bold;
-}
 }
 
 

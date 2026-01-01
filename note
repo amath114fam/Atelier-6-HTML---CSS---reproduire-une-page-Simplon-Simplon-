@@ -1,0 +1,30 @@
+Page Detail Traiteurs
+Pour chaque card tu a creer  son code specifique car tu as donne a chaque card dans le html une classe differente de celle des autres, et si tu avais a faire a beaucoup de cards cela allait etre tres fatiguant, pourtant si tu as utilise des grids
+
+
+Page Dashboard
+Je vois que tu as utilise des p portant ca doit etre cliquant.
+dans le css j'ai fait ce changement car dans la maquette, seule l'en-tete de tableau a des border-radius.
+Donc dant .tableau table: border-radius: 5px 5px 0px 0px;
+
+
+Page connexion:
+tres bien fait.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

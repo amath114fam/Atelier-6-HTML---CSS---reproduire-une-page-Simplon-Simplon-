@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="header-login">
         <nav>
             <a id="logo" href="images/logo.png"><img src="images/logo.png" alt="logo du site"></a>
             <ul>
@@ -23,5 +23,31 @@
             </div>
         </nav>
     </header>
+    <section class="login-auth">
+        <div class="auth">
+            <h2>Connexion</h2>
+            <form action="#">
+                <div class="mail">
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail">
+                </div>
+                <div class="pass">
+                    <label for="passe">Mot de passe</label>
+                    <input type="password" id="passe">
+                </div>
+                <div class="text-bas">
+                    <div class="check">
+                        <input type="checkbox" name="" id="checke" class="moncheck">
+                        <label for="checke">Se souvenir de moi</label>
+                    </div>
+                    <a href="#">Mot de passe oublié ?</a>
+                </div>
+                <p>Pas de compte ?<a href="#"> inscrivez-vous</a></p>
+                <div class="but">
+                    <button type="submit">Se connecter</button>
+                </div>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
